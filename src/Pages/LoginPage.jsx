@@ -13,7 +13,7 @@ const LoginPage = () => {
           e.preventDefault();
           const payload={email,password}
           try {
-             await axios.put("https://day-41-nodejs.onrender.com/login-user",payload)
+             await axios.put("https://day-41-nodejs.onrender.com/api/login-user",payload)
              .then(res=>{setRegistered(res.data)}).catch((error)=>console.log(error));
 
              if (email===registered.loginuser.email) {

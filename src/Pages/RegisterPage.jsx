@@ -16,7 +16,7 @@ const RegisterPage = () => {
       const payload={username,email,password}
 
     try {
-      await axios.post("https://day-41-nodejs.onrender.com/register-user",payload)
+      await axios.post("https://day-41-nodejs.onrender.com/api/register-user",payload)
       .then(res=>{setRegistered(res.data)}).catch((error)=>console.log(error))
   navigate('/loginpage')
     } catch (error) {

@@ -18,7 +18,7 @@ const Resetpassword = () => {
 
 
         const payload={password};
-        const response= `https://day-41-nodejs.onrender.com/resetpassword/${id}/${token}`;
+        const response= `https://day-41-nodejs.onrender.com/api/resetpassword/${id}/${token}`;
 
         try {
             await axios.put(response,payload)
