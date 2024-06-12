@@ -12,7 +12,7 @@ const ForgetPassword = () => {
         e.preventDefault();
         const payload={email}
         try {
-            const response=await axios.put("http://localhost:5000/api/forgetpassword",payload)
+            const response=await axios.put("https://day-41-nodejs.onrender.com/forgetpassword",payload)
             .then(res=>{setRegistered(res.data)
                  navigate("/loginpage")}).catch((error)=>console.log(error));
 
